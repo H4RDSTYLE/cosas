@@ -28,7 +28,17 @@ public class MailClient
     {
         return server.getNextMailItem(user);
     }
-
+    
+    /**
+     * Funcionalidad 02 (Ivan Perez).
+     */
+    
+    public int getNumberOfMessageInServer() {
+        int numeroDeMensajeTotales = server.howManyMailItems(user);
+        return numeroDeMensajeTotales;
+    }
+    
+    
     /**
      * Print the next mail item (if any) for this user to the text 
      * terminal.
